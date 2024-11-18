@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Heritage of Hyderabad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html" class="menu-item">HOME</a>
+        <a href="history.html" class="menu-item">HISTORY</a>
+        <a href="diversity.html" class="menu-item">DIVERSITY</a>
+        <a href="gallery.html" class="menu-item">GALLERY</a>
+        <a href="cuisine.html" class="menu-item">CUISINE</a>
+        <a href="map.html" class="menu-item">MAP</a>
+        <a href="settings.html" class="menu-item active">SETTINGS</a>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>SETTINGS</h1>
+        </header>
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search Settings...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+<!-- Update the dark mode toggle -->
+<div class="content-box">
+    <h2>Display</h2>
+    <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider round"></span>
+        Dark Mode
+    </label>
+    <label>
+        Font Size:
+        <select id="fontSizeSelect">
+            <option value="14px">Small</option>
+            <option value="16px">Medium</option>
+            <option value="18px">Large</option>
+        </select>
+    </label>
+</div>
+
+        <div class="content-grid">
+            <div class="content-box">
+                <h2>Language</h2>
+                <select style="width: 100%; padding: 10px; margin-top: 10px; border-radius: 4px; border: 1px solid #ddd;">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="te">Telugu</option>
+                    <option value="ur">Urdu</option>
+                </select>
+            </div>
+
+            <div class="content-box">
+                <h2>Notifications</h2>
+                <label style="display: block; margin: 10px 0;">
+                    <input type="checkbox" checked> Email Updates
+                </label>
+                <label style="display: block; margin: 10px 0;">
+                    <input type="checkbox" checked> Push Notifications
+                </label>
+            </div>
+
+            <div class="content-box">
+                <h2>Display</h2>
+                <label style="display: block; margin: 10px 0;">
+                    <input type="checkbox"> Dark Mode
+                </label>
+                <label style="display: block; margin: 10px 0;">
+                    Font Size:
+                    <select style="margin-left: 10px; padding: 5px;">
+                        <option>Small</option>
+                        <option selected>Medium</option>
+                        <option>Large</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="content-box">
+                <h2>Account</h2>
+                <button style="width: 100%; padding: 10px; margin: 10px 0; background: #8B0000; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                    Sign Out
+                </button>
+                <button style="width: 100%; padding: 10px; margin: 10px 0; background: none; border: 1px solid #8B0000; color: #8B0000; border-radius: 4px; cursor: pointer;">
+                    Delete Account
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="about.html">ABOUT US</a>
